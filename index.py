@@ -41,6 +41,7 @@ def send_sms():
 
 @app.route('/send_email', methods=['POST'])
 def send_email():
+    # Captamos los datos de la solucitud
     data = request.json
     contenido = data["contenido"]
     destino = data["destino"]
